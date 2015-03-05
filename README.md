@@ -1,6 +1,8 @@
-# go-between
-=======
+# go-between [![Build Status][travis-img]][travis-url]
 > get string between 2 strings
+
+[travis-img]: https://img.shields.io/travis/ddo/go-between.svg?style=flat-square
+[travis-url]: https://travis-ci.org/ddo/go-between
 
 ## Installation
 
