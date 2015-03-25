@@ -5,14 +5,20 @@ import (
 )
 
 func Between(str, start, end string) string {
-	_start := strings.Index(str, start)
-	_end := strings.Index(str, end)
+	indexStart := strings.Index(str, start)
 
-	if _start == -1 || _end == -1 || _end <= _start {
+	if indexStart == -1 {
 		return ""
 	}
 
-	_start += len(start)
+	indexStart += len(start)
+	strNew := str[indexStart:]
 
-	return str[_start:_end]
+	indexEnd := strings.Index(strNew, end)
+
+	if indexEnd == -1 {
+		return ""
+	}
+
+	return strNew[:indexEnd]
 }

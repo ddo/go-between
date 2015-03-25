@@ -57,3 +57,11 @@ func TestEmptyEnd(t *testing.T) {
 		t.Fail()
 	}
 }
+
+func TestDuplicatedEnd(t *testing.T) {
+	substr := Between("ld hello world", "hel", "ld")
+
+	if substr != "lo wor" {
+		t.Fail()
+	}
+}
