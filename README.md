@@ -17,4 +17,5 @@ import . "between"
 
 Between("hello world", "hel", "ld"); // => "lo wor"
 Between("i'm so cool", "m", "oo"); // => " so c"
+Between("world hello world", "hel", "ld"); // => "lo wor"
 ```
