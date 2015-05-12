@@ -9,7 +9,7 @@
 
 ## Installation
 
-```
+```bash
 go get github.com/ddo/go-between
 ```
 
